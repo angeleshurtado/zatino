@@ -25,7 +25,7 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js" integrity="sha512-rKFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA==" crossorigin="anonymous"></script>
         <script>
-            Papa.parse('https://raw.githubusercontent.com/angeleshurtado/Final/main/datos.csv', {
+            Papa.parse('https://raw.githubusercontent.com/angeleshurtado/datos1/main/datos1.csv', {
                 download: true,
                 header: true,
                 dynamicTyping: true,
@@ -35,14 +35,14 @@
 
                     var n = new URLSearchParams(window.location.search).get('nro');
                     if (n < 9 && n !== null) {
-                        document.querySelector('section').innerHTML = '<h1>' + peliculas[n].name + '</h1><h4>' + peliculas[n].director + ' (' + peliculas[n].year + ')</h4><img src="images/' + peliculas[n].pic_lg + '"><p>' + peliculas[n].description + '</p><h3>Trailer</h3><p>Puedes ver el tráiler de esta película en <a href="' + peliculas[n].trailer + '" target="_blank">Youtube</a><p>';
+                        document.querySelector('section').innerHTML = '<h1>' + peliculas[n].name + '</h1><h4>' + ' </h4><img src="images/' + peliculas[n].pic_lg + '"><p>' + peliculas[n].description;
 
                     } else {
-                        document.querySelector('section').innerHTML = '<h1>Al parecer se fundió el motor. ¡Vamos al mecánico! </h1><h4>Letty lo arreglará mientras vuelves a <a href="peliculas.html">películas</a>.</h4>';
-                        document.body.style.backgroundPosition = 'bottom right';
-                        document.body.style.backgroundImage = 'url("images/error-amable.jpg")';
+                        document.querySelector('section').innerHTML = '<h1>Ups! Algo no salió como esprábamos. </h1><h4>Si quieres seguir vitrinenando vuelve a <a href="peliculas.html">productos</a>.</h4>';
+                        document.body.style.backgroundPosition = 'right';
+                        document.body.style.backgroundImage = 'url("images/error.png")';
                         document.body.style.backgroundRepeat = 'no-repeat';
-                        document.body.style.backgroundSize = 'auto 90%';
+                        document.body.style.backgroundSize = 'auto 45%';
                     }
             }
         });

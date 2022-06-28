@@ -5,7 +5,7 @@
 
 :root{
     --fondo: #E2DDD3;
-    --figura: #ddd;
+    --figura: #695F59;
 }
 
 * {
@@ -20,8 +20,8 @@ body {
 }
 
 body.portada{
-    background:var(--fondo) url('images/portada.jpg') right bottom no-repeat;
-    background-size:auto 67%;
+    background:var(--fondo) url('images/portada.jpg') right no-repeat;
+    background-size:auto 57%;
 }
 
 a {
@@ -73,6 +73,7 @@ header {
     margin-right:1%;
     min-height: 80vh;
     color:  #695F59;
+
 }
 
 header div{
@@ -156,12 +157,7 @@ main section{
 
 main section h1{
     font-size:calc(1.5rem + 1vw);
-    line-height: 1;
-}
-
-main section h3{
-    font-size:1.3rem;
-    line-height: 2.5;
+    line-height: 0;
 }
 
 main section h4{
@@ -170,7 +166,7 @@ main section h4{
 }
 
 main section img{
-    max-width:100%;
+    max-width:60%;
     height:auto;
     margin:1.5rem 0;
 }
@@ -189,14 +185,14 @@ main section p{
 
 /* para las páginas de locaciones y ganancias */
 
+
 main div#mapa{
-    background:var(--fondo) url('images/portada.jpg') right bottom no-repeat;
     margin:1%;
     width:98%;
     height:60vh;
 }
 
-main canvas#grafico{
-    background:var(--fondo) url('images/portada.jpg') right bottom no-repeat;
+main canvas{
     background:#111;
+
 }
