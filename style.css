@@ -82,8 +82,8 @@ header div{
 }
 
 header div h1{
-    font-size:calc(3rem + 2vw);
-    line-height: 1;
+    font-size:calc(4rem + 2vw);
+    line-height: 1.5;
     text-shadow: 0 0 2px var(--fondo);
     font-family: 'Tai Heritage Pro', serif;
     color:  #695F59;
@@ -91,6 +91,7 @@ header div h1{
 }
 
 header div p{
+    font-size:calc(2rem + 1vw);
     margin-top:1rem;
     line-height: 1.5;
     text-shadow: 0 0 2px var(--fondo);
@@ -137,7 +138,7 @@ main article div{
 }
 
 main article div h2{
-    font-size:1rem;
+    font-size:1.5rem;
     letter-spacing: 0.05rem;
 }
 
@@ -174,6 +175,7 @@ main section img{
 main section p{
     max-width:100%;
     line-height: 1.6;
+    font-size:1.5rem;
 }
 
 @media screen and (orientation:landscape){
